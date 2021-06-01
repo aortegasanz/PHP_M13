@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\BookingController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +17,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Route::get   ('client/list',    [ClientController::class, 'index'] )->name('client.list');    
+
+Route::get   ('booking/list',      [BookingController::class, 'index'] )->name('booking.list');
+Route::get   ('booking/show/{id}', [BookingController::class, 'show']  )->name('booking.show');    
+Route::get   ('booking/create',    [BookingController::class, 'create'])->name('booking.create');  
+Route::get   ('booking/edit/{id}', [BookingController::class, 'edit']  )->name('booking.edit');    
+Route::put   ('booking/store',     [BookingController::class, 'store'] )->name('booking.store');   
+Route::delete('booking/delete',    [BookingController::class, 'delete'])->name('booking.delete');

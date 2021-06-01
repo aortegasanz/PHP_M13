@@ -1,7 +1,8 @@
 # Tasca M13
 
 - Descripció
-En aquesta pràctica aprendras a crear vistes per mitjà del motor de vister Blade i aplicar bootstrao als nostres projectes. Hauras de crear una aplicació, per la gestió de reserva d’un Hotel, aplicant el patró de disseny de software MVC(Model-Vista-Controlador). 
+En aquesta pràctica aprendras a crear vistes per mitjà del motor de vister Blade i aplicar bootstrap als nostres projectes. 
+Hauras de crear una aplicació, per la gestió de reserva d’un Hotel, aplicant el patró de disseny de software MVC(Model-Vista-Controlador). 
 
 * Nivell 1
     - Exercici 1
