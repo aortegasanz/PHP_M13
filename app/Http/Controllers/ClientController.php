@@ -15,4 +15,10 @@ class ClientController extends Controller
         return view('client.index', compact('pageContent', 'clients'));
     }   
 
+    public function show($id) {
+        $client = Client::findOrFail($id);
+        $pageContent = 'Vista Detall Client';
+        return view('client.show', compact('pageContent', 'client'));
+    }
+
 }

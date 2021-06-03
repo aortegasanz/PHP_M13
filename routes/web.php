@@ -17,10 +17,11 @@ use App\Http\Controllers\BookingController;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('layouts.dashboard');
 });
 
-Route::get   ('client/list',    [ClientController::class, 'index'] )->name('client.list');    
+Route::get   ('client/list',      [ClientController::class, 'index'] )->name('client.list');    
+Route::get   ('client/show/{id}', [ClientController::class, 'show'] )->name('client.show');
 
 Route::get   ('booking/list',      [BookingController::class, 'index'] )->name('booking.list');
 Route::get   ('booking/show/{id}', [BookingController::class, 'show']  )->name('booking.show');    
