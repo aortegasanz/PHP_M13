@@ -29,6 +29,7 @@
     </head>
     <body class="animsition">
         <div class="page-wrapper">
+            @yield('page')
             @include('layouts.partials.header-mobile')
             @include('layouts.partials.sidebar')
             <!-- PAGE CONTAINER-->

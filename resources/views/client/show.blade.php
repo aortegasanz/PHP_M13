@@ -1,4 +1,7 @@
 @extends('layouts.dashboard')
+@section('page')
+    @php $currentPage = 'clients' @endphp
+@endsection
 @section('content')
     <h1>CLIENT</h1>
     @if (isset($pageContent))

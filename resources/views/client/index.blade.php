@@ -1,4 +1,7 @@
 @extends('layouts.dashboard')
+@section('page')
+    @php $currentPage = 'clients' @endphp
+@endsection
 @section('content')
     <h1>CLIENTS</h1>
     @if (Session::get('success'))
@@ -34,12 +37,14 @@
                         <a href="{{ route('client.show', $elem->id) }}" class="item" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
                             <i class="fa fa-eye"></i>
                         </a>
+                        <!--
                         <button class="item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
                             <i class="zmdi zmdi-edit"></i>
                         </button>
                         <button class="item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
                             <i class="zmdi zmdi-delete"></i>
                         </button>
+                        -->
                     </div>
                 </td>
             </tr>

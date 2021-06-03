@@ -1,4 +1,7 @@
 @extends('layouts.dashboard')
+@section('page')
+    @php $currentPage = 'bookings' @endphp
+@endsection
 @section('content')
         <h1>LLISTAT DE RESERVES</h1>
         @if (Session::get('success'))

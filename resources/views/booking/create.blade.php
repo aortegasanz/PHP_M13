@@ -1,4 +1,7 @@
 @extends('layouts.dashboard')
+@section('page')
+    @php $currentPage = 'bookings' @endphp
+@endsection
 @section('content')
     <div class="container">
         <h1>RESERVES</h1>
