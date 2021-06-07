@@ -4,7 +4,7 @@
         <div class="container-fluid">
             <div class="header-wrap">
                 <form class="form-header" action="" method="POST">
-                    <input class="au-input au-input--xl" type="text" name="search" placeholder="Search for datas &amp; reports..." />
+                    <input class="au-input au-input--xl" type="text" name="search" placeholder="Busca per datas o reports ..." />
                     <button class="au-btn--submit" type="submit">
                         <i class="zmdi zmdi-search"></i>
                     </button>
@@ -16,7 +16,7 @@
                             <span class="quantity">1</span>
                             <div class="mess-dropdown js-dropdown">
                                 <div class="mess__title">
-                                    <p>You have 2 news message</p>
+                                    <p>Tens 2 missatges nous</p>
                                 </div>
                                 <div class="mess__item">
                                     <div class="image img-cir img-40">
@@ -24,22 +24,22 @@
                                     </div>
                                     <div class="content">
                                         <h6>Michelle Moreno</h6>
-                                        <p>Have sent a photo</p>
-                                        <span class="time">3 min ago</span>
+                                        <p>Ha enviat una foto</p>
+                                        <span class="time">fa 3 minutos</span>
                                     </div>
                                 </div>
                                 <div class="mess__item">
                                     <div class="image img-cir img-40">
-                                        <img src="{!! asset('theme/images/icon/avatar-04.jpg') !!}" alt="Diane Myers" />
+                                        <img src="{!! asset('theme/images/icon/avatar-03.jpg') !!}" alt="Diane Myers" />
                                     </div>
                                     <div class="content">
                                         <h6>Diane Myers</h6>
-                                        <p>You are now connected on message</p>
-                                        <span class="time">Yesterday</span>
+                                        <p>Ara estás conectat amb missatges</p>
+                                        <span class="time">Ahir</span>
                                     </div>
                                 </div>
                                 <div class="mess__footer">
-                                    <a href="#">View all messages</a>
+                                    <a href="#">Veure tots els missatges</a>
                                 </div>
                             </div>
                         </div>
@@ -48,15 +48,15 @@
                             <span class="quantity">1</span>
                             <div class="email-dropdown js-dropdown">
                                 <div class="email__title">
-                                    <p>You have 3 New Emails</p>
+                                    <p>Tens 3 emails nous</p>
                                 </div>
                                 <div class="email__item">
                                     <div class="image img-cir img-40">
                                         <img src="{!! asset('theme/images/icon/avatar-06.jpg') !!}" alt="Cynthia Harvey" />
                                     </div>
                                     <div class="content">
-                                        <p>Meeting about new dashboard...</p>
-                                        <span>Cynthia Harvey, 3 min ago</span>
+                                        <p>Encontre sobre nou dashboard...</p>
+                                        <span>Cynthia Harvey, fa 3 minuts</span>
                                     </div>
                                 </div>
                                 <div class="email__item">
@@ -64,8 +64,8 @@
                                         <img src="{!! asset('theme/images/icon/avatar-05.jpg') !!}" alt="Cynthia Harvey" />
                                     </div>
                                     <div class="content">
-                                        <p>Meeting about new dashboard...</p>
-                                        <span>Cynthia Harvey, Yesterday</span>
+                                        <p>Encontre sobre nou dashboard...</p>
+                                        <span>Cynthia Harvey, Ahir</span>
                                     </div>
                                 </div>
                                 <div class="email__item">
@@ -73,12 +73,12 @@
                                         <img src="{!! asset('theme/images/icon/avatar-04.jpg') !!}" alt="Cynthia Harvey" />
                                     </div>
                                     <div class="content">
-                                        <p>Meeting about new dashboard...</p>
-                                        <span>Cynthia Harvey, April 12,,2018</span>
+                                        <p>Encontre sobre nou dashboard...</p>
+                                        <span>Cynthia Harvey, 12 Abril de 2018</span>
                                     </div>
                                 </div>
                                 <div class="email__footer">
-                                    <a href="#">See all emails</a>
+                                    <a href="#">Veure tots els emails</a>
                                 </div>
                             </div>
                         </div>
@@ -87,15 +87,15 @@
                             <span class="quantity">3</span>
                             <div class="notifi-dropdown js-dropdown">
                                 <div class="notifi__title">
-                                    <p>You have 3 Notifications</p>
+                                    <p>Tens 3 Notificacions</p>
                                 </div>
                                 <div class="notifi__item">
                                     <div class="bg-c1 img-cir img-40">
                                         <i class="zmdi zmdi-email-open"></i>
                                     </div>
                                     <div class="content">
-                                        <p>You got a email notification</p>
-                                        <span class="date">April 12, 2018 06:50</span>
+                                        <p>Tens una notificació de email</p>
+                                        <span class="date">12 Abril de 2018 06:50</span>
                                     </div>
                                 </div>
                                 <div class="notifi__item">
@@ -103,8 +103,8 @@
                                         <i class="zmdi zmdi-account-box"></i>
                                     </div>
                                     <div class="content">
-                                        <p>Your account has been blocked</p>
-                                        <span class="date">April 12, 2018 06:50</span>
+                                        <p>El teu compte ha sigut bloquejat</p>
+                                        <span class="date">12 Abril de 2018 06:50</span>
                                     </div>
                                 </div>
                                 <div class="notifi__item">
@@ -112,12 +112,12 @@
                                         <i class="zmdi zmdi-file-text"></i>
                                     </div>
                                     <div class="content">
-                                        <p>You got a new file</p>
-                                        <span class="date">April 12, 2018 06:50</span>
+                                        <p>Tens un nou fitxer</p>
+                                        <span class="date">12 Abril de 2018 06:50</span>
                                     </div>
                                 </div>
                                 <div class="notifi__footer">
-                                    <a href="#">All notifications</a>
+                                    <a href="#">Totes les notificacions</a>
                                 </div>
                             </div>
                         </div>
@@ -125,42 +125,34 @@
                     <div class="account-wrap">
                         <div class="account-item clearfix js-item-menu">
                             <div class="image">
-                                <img src="{!! asset('theme/images/icon/avatar-01.jpg') !!}" alt="John Doe" />
+                                <img src="{!! asset('theme/images/icon/avatar-03.jpg') !!}" alt="{{ Auth::user()->name }}" />
                             </div>
                             <div class="content">
-                                <a class="js-acc-btn" href="#">john doe</a>
+                                <a class="js-acc-btn" href="#">{{ Auth::user()->name }}</a>
                             </div>
                             <div class="account-dropdown js-dropdown">
                                 <div class="info clearfix">
                                     <div class="image">
                                         <a href="#">
-                                            <img src="{!! asset('theme/images/icon/avatar-01.jpg') !!}" alt="John Doe" />
+                                            <img src="{!! asset('theme/images/icon/avatar-03.jpg') !!}" alt="{{ Auth::user()->name }}" />
                                         </a>
                                     </div>
                                     <div class="content">
                                         <h5 class="name">
-                                            <a href="#">john doe</a>
+                                            <a href="#">{{ Auth::user()->name }}</a>
                                         </h5>
-                                        <span class="email">johndoe@example.com</span>
-                                    </div>
-                                </div>
-                                <div class="account-dropdown__body">
-                                    <div class="account-dropdown__item">
-                                        <a href="#">
-                                            <i class="zmdi zmdi-account"></i>Account</a>
-                                    </div>
-                                    <div class="account-dropdown__item">
-                                        <a href="#">
-                                            <i class="zmdi zmdi-settings"></i>Setting</a>
-                                    </div>
-                                    <div class="account-dropdown__item">
-                                        <a href="#">
-                                            <i class="zmdi zmdi-money-box"></i>Billing</a>
+                                        <span class="email">{{ Auth::user()->email }}</span>
                                     </div>
                                 </div>
                                 <div class="account-dropdown__footer">
-                                    <a href="#">
-                                        <i class="zmdi zmdi-power"></i>Logout</a>
+                                    <form method="POST" action="{{ route('logout') }}">
+                                        @csrf
+                                        <x-dropdown-link :href="route('logout')"
+                                                onclick="event.preventDefault();
+                                                            this.closest('form').submit();">
+                                            <i class="zmdi zmdi-power"></i> Sortir
+                                        </x-dropdown-link>
+                                    </form>
                                 </div>
                             </div>
                         </div>
