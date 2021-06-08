@@ -38,12 +38,16 @@
                     <td>
                         <a href="{{ route('booking.show', $elem->id) }}"><i class="fa fa-eye"></i></a>
                         <a href="{{ route('booking.edit', $elem->id) }}"><i class="fa fa-edit"></i></a> 
-                        <form action="{{ route('booking.delete', $elem->id) }}" method="POST">
-                            @csrf
-                            @method('delete')
-                            <input type="hidden" name="id" value="{{ $elem->id }}"/>
-                            <button type="submit" style="background:white;"><i class="far fa-trash-alt"></i></button>
-                        </form>
+                        @can('delete_booking')
+                            <form action="{{ route('booking.delete', $elem->id) }}" method="POST">
+                                @csrf
+                                @method('delete')
+                                <input type="hidden" name="id" value="{{ $elem->id }}"/>
+                                <button type="submit" style="background:white;"><i class="far fa-trash-alt"></i></button>
+                            </form>
+                        @else
+                            <span>No tiene permisos para borrar Reservas</span>
+                        @endcan
                     </td>
                 </tr>
             @endforeach

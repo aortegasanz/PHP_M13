@@ -128,7 +128,19 @@
                                 <img src="{!! asset('theme/images/icon/avatar-03.jpg') !!}" alt="{{ Auth::user()->name }}" />
                             </div>
                             <div class="content">
-                                <a class="js-acc-btn" href="#">{{ Auth::user()->name }}</a>
+                                <a class="js-acc-btn" href="#">
+                                    @php
+                                        $roles = '';
+                                        foreach (Auth::user()->getRoleNames() as $role) {
+                                            if ($roles == '') {
+                                                $roles = $role;
+                                            } else {
+                                                $roles .= ','.$role;
+                                            }                                            
+                                        }
+                                    @endphp                                
+                                    {{ Auth::user()->name }} ({{ $roles }})                                    
+                                </a>
                             </div>
                             <div class="account-dropdown js-dropdown">
                                 <div class="info clearfix">
@@ -142,6 +154,8 @@
                                             <a href="#">{{ Auth::user()->name }}</a>
                                         </h5>
                                         <span class="email">{{ Auth::user()->email }}</span>
+                                        <br/>
+                                        <span class="email"><stront>Roles:</strong> {{ $roles }}</span>
                                     </div>
                                 </div>
                                 <div class="account-dropdown__footer">
